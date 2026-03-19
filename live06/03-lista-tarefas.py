@@ -1,6 +1,11 @@
 import os
 
+from colorama import Fore, Style, init
+
+init ()
+
 banco_dados = ['Comprar passagem', 'Pagar aluguel']
+
 
 def limpar_tela():
     os.system('clear')
