@@ -4,7 +4,10 @@ from colorama import Fore, Style, init
 
 init ()
 
-banco_dados = ['Comprar passagem', 'Pagar aluguel']
+banco_dados = [
+    'Comprar passagem',
+    'Pagar aluguel'
+]
 
 
 def limpar_tela():
@@ -56,7 +59,7 @@ def lista_tarefas():
             print('Sainda do sistema...')
             break
         else:
-            print ('Opção errada, tenta novamente!')
+            print (f'{Fore.RED}Opção errada, tenta novamente!{Style.RESET_ALL}')
 
 if __name__ == '__main__':
     lista_tarefas()
