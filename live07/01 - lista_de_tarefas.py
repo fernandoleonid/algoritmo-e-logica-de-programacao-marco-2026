@@ -63,6 +63,11 @@ def modificar_tarefa():
     if tarefa:
         nova_tarefa = input(f"Digite a nova tarefa (atual: {tarefa['tarefa']}): ")
         tarefa['tarefa'] = nova_tarefa
+        print (f"{Fore.BLUE}Tarefa modificada com sucesso!{Style.RESET_ALL}")
+        resposta = input ("Deseja ver a lista de tarefas [s|n]: ")
+        if resposta == 's':
+            listar_tarefas()
+
     else:
         print (f'{Fore.RED}ID não encontrado!{Style.RESET_ALL}')
 
