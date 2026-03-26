@@ -67,10 +67,16 @@ def modificar_tarefa():
     conexao.commit()
 
 def remover_tarefa():
-    print ('Remover tarefa...')
+    listar_tarefas()
+    id_escolhido = int (input('Escolha o ID para remover: '))
+    cursor.execute('DELETE FROM tarefas WHERE id = ?', (id_escolhido,))
+    conexao.commit()
 
 def trocar_status():
-    print ('Trocar status...')
+    listar_tarefas()
+    id_escolhido = int(input("Escolha o ID da tarefa que deseja alterar o status: "))
+    cursor.execute("UPDATE tarefas SET feito = NOT feito WHERE id = ?", (id_escolhido,))
+    conexao.commit()
 
 def app():
     while True:
