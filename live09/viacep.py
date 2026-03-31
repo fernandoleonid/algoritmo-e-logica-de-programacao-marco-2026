@@ -17,4 +17,7 @@ def consultar_cep (cep):
 cep = input ('Digite um cep para pesquisar: ')
 info = consultar_cep(cep)
 
-print (info)
+print ('*'*30)
+print (f'CEP: {info["cep"]}')
+print (f'Localidade: {info["localidade"]}' )
+print (f'UF: {info["uf"]}')
