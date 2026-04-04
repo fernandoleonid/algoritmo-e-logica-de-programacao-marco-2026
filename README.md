@@ -119,7 +119,7 @@ No arquivo `live09/filmes.py`, a função `consultar_filme` foi desenvolvida **p
 4. Execute qualquer arquivo:
    ```bash
    python live02/01-soma.py
-   ```********
+   ```
 
 ---
 
