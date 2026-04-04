@@ -27,7 +27,6 @@ def cadastrar_cliente():
     conexao.commit()
 
 def listar_cliente():
-    limpar_tela()
     cursor.execute('SELECT * FROM clientes')
     conexao.commit()
     clientes = cursor.fetchall()
